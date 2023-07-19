@@ -23,7 +23,7 @@ export const Hero = ({ blogs }: HeroProps) => {
                         <Box sx={{
                             position: 'relative',
                             width: '100%',
-                            height: '100vh'
+                            height: '100vh',
                         }}>
                             <Image
                                 src={item.image.url}
@@ -62,7 +62,7 @@ export const Hero = ({ blogs }: HeroProps) => {
                                     <Avatar
                                         src={item.author.avatar.url}
                                         alt={item.author.name}
-                                        sx={{ width: { xs: '40px', md: '45px' }, height: {xs: '40px', md: '45px'}, marginTop:{ xs: '4px', md:'2px'} }} />
+                                        sx={{ width: { xs: '40px', md: '45px' }, height: { xs: '40px', md: '45px' }, marginTop: { xs: '4px', md: '2px' } }} />
                                     <Box >
                                         <Typography>{item.author.name}</Typography>
                                         <Box>

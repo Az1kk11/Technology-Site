@@ -11,34 +11,43 @@ const CategoryPage = ({ categories }: CategoryPageProps) => {
     return (
         <SEO metaTitle='All Categories'>
             <Layout>
-                <Box
-                    width={{ xs: '100%', md: '80%' }}
-                    marginX={'auto'}
-                    marginTop={'15vh'}
-                    borderRadius={'8px'}
-                    height={{ xs: '30vh', md: '50vh' }}
-                    sx={{
-                        backgroundColor: 'black',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
-                        flexDirection: 'column',
-                        rowGap: '20px'
-                    }}
-                >
-                    <Typography variant='h3' sx={{ fontSize: { xs: '35px', md: '40px' } }} fontFamily={'cursive'}>
-                        All Categories
-                    </Typography>
-                    <ButtonGroup variant='contained' aria-label='outlined primary button group'>
-                        {categories.map(item => (
-                            <Button
-                                onClick={() => router.push(`category/${item.slug}`)}
-                                key={item.slug}
-                            >
-                                # {item.label}
-                            </Button>
-                        ))}
-                    </ButtonGroup>
+                <Box 
+                width={'100%'}
+                height={'90vh'}
+                sx={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                }}>
+                    <Box
+                        width={{ xs: '100%', md: '80%' }}
+                        marginX={'auto'}
+                        marginTop={'60px'}
+                        borderRadius={'8px'}
+                        height={{ xs: '30vh', md: '50vh' }}
+                        sx={{
+                            backgroundColor: 'black',
+                            display: 'flex',
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                            flexDirection: 'column',
+                            rowGap: '20px'
+                        }}
+                    >
+                        <Typography variant='h3' sx={{ fontSize: { xs: '35px', md: '40px' } }} fontFamily={'cursive'}>
+                            All Categories
+                        </Typography>
+                        <ButtonGroup variant='contained' aria-label='outlined primary button group'>
+                            {categories.map(item => (
+                                <Button
+                                    onClick={() => router.push(`category/${item.slug}`)}
+                                    key={item.slug}
+                                >
+                                    # {item.label}
+                                </Button>
+                            ))}
+                        </ButtonGroup>
+                    </Box>
                 </Box>
             </Layout>
         </SEO>

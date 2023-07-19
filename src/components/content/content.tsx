@@ -13,7 +13,7 @@ export const Content = ({ blogs }: ContentProps) => {
             {blogs.map(item => (
                 <Box key={item.id}
                     sx={{
-                        backgroundColor: 'rgba(0, 0, 0, .5)',
+                        backgroundColor: 'rgba(0, 0, 0, .0)',
                         padding: '20px',
                         marginTop: '20px',
                         borderRadius: '8px',
