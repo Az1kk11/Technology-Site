@@ -14,7 +14,7 @@ const CategoryPage = ({ categories }: CategoryPageProps) => {
                 <Box
                     width={{ xs: '100%', md: '80%' }}
                     marginX={'auto'}
-                    marginTop={'10vh'}
+                    marginTop={'15vh'}
                     borderRadius={'8px'}
                     height={{ xs: '30vh', md: '50vh' }}
                     sx={{
